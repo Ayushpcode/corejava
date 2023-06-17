@@ -2,7 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-    String myFirstString = "Hello world Ayush";
+    String myFirstString = "Hello my java code";
     System.out.print(myFirstString);
     }
 }
