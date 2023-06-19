@@ -1,17 +1,31 @@
 // Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
 // then press Enter. You can now see whitespace characters in your code.
+
+import java.util.Scanner;
+
 public class Main {
-    public static void main(String[] args) {
-        checkage(10);
+    public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
+        print("Enter the First Number : ");
+        int n1 = in.nextInt();
+        print("Enter the Second Number : ");
+        int n2 = in.nextInt();
+        print("Enter the Third Number : ");
+        int n3 = in.nextInt();
+        checkGreaterOne(n1 ,n2, n3);
     }
-    public static void checkage(int number){
-        if(number > 18){
-            print("eligible for vote");
-        } else {
-            print("Not eligible for vote");
-        }
-    }
-    public static void print(String message){
-        System.out.print(message);
-    }
+   public static void checkGreaterOne(int Number1 , int Number2 , int Number3){
+          if(Number1 > Number2){
+              if(Number1 > Number3){
+                  print(Number1 + " is greater one. ");
+              }
+          }else if(Number2 > Number3){
+              print(Number2 + " is greater one.");
+          }else{
+              print(Number3 + " is greator one.");
+          }
+   }
+   public static void print(String message){
+       System.out.print(message);
+   }
 }
