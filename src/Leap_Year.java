@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Leap_Year {
     public static void main(String[] args){
-        checkYear(2006);
+        Scanner in = new Scanner(System.in);
+        print("Enter the year : ");
+        int yr = in.nextInt();
+        checkYear(yr);
     }
     public static void checkYear(int year){
         if(year % 4 == 0 || year % 400 == 0 || year % 100 == 0 ){

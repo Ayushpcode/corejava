@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Odd_Even {
     public static void main(String[] args){
-        checkNumber(52);
+        Scanner in = new Scanner(System.in);
+        print("Enter the Number : ");
+        int num = in.nextInt();
+        checkNumber(num);
     }
     public static void checkNumber(int number){
         if(number % 2 == 0){

@@ -1,6 +1,11 @@
+import java.util.Scanner;
+
 public class Agecheker {
     public static void main(String[] args) {
-        checkage(10);
+        Scanner in = new Scanner(System.in);
+        print("Enter the Age Of a candidate :");
+        int age = in.nextInt();
+        checkage(age);
     }
     public static void checkage(int number){
         if(number > 18){
