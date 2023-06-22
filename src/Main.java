@@ -6,20 +6,15 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        print("Enter the number : ");
-       int num = in.nextInt();
-       int flag = 0 ;
-       int sum , i;
-       for (i = 1; i <= num; i++){
-           if(num % i == 0){
-               flag = flag + 1;
-           }
+        print("enter the number : ");
+       int number = in.nextInt();
+       int sum = 0 ;
+       for (int i = 0 ; i <= number; i++){
+           if( i % 2 == 0){
+            sum = sum + i ;
        }
-       if(flag == 2){
-           print(num + " is a prime number .");
-       }else{
-           print(num + " is a non prime number .");
        }
+       print("the sum of all even number upto "+ number  + " is " + sum);
     }
    public static void print(String message){
        System.out.print(message);
