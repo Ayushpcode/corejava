@@ -1,14 +1,11 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-
 import java.util.Scanner;
 
-public class Main {
+public class Grade_Check {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         print("enter the number : ");
         int number = in.nextInt();
-            gradeNumber(number);
+        gradeNumber(number);
     }
     public static void gradeNumber(int percentage){
         if(percentage > 100 || percentage < 0){
@@ -27,7 +24,7 @@ public class Main {
         }
 
     }
-   public static void print(String message){
-       System.out.print(message);
-   }
+    public static void print(String message){
+        System.out.print(message);
+    }
 }
