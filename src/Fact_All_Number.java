@@ -1,14 +1,11 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-
 import java.util.Scanner;
 
-public class Main {
+public class Fact_All_Number {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         print("enter the number : ");
         int number = in.nextInt();
-            factAll(number);
+        factAll(number);
     }
     public static void factAll(int number){
         int fact = 1;
@@ -18,7 +15,7 @@ public class Main {
 
         }
     }
-   public static void print(String message){
-       System.out.println(message);
-   }
+    public static void print(String message){
+        System.out.println(message);
+    }
 }
