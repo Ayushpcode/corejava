@@ -1,7 +1,4 @@
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
-
-public class Main {
+public class Vowel {
     public static void main(String[] args) {
         ioVowel('A');
 
@@ -13,7 +10,7 @@ public class Main {
             print("The character is constant");
         }
     }
-   public static void print(String message){
-       System.out.print(message);
-   }
+    public static void print(String message){
+        System.out.print(message);
+    }
 }
