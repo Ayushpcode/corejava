@@ -21,7 +21,13 @@ public class Executor {
         customer . applyInterest();
         System.out.println(customer.toString());
 
-       // currentAccount CA = new currentAccount(900000101,50000,00);
+        currentAccount ca = new currentAccount(900000101,50000,0.0);
+        System.out.println("Over draft limits !");
+        double overDraft = in.nextDouble();
+        ca . setOverdraftLimit(overDraft);
+        ca . withdraw(500);
+        System.out.println(ca.toString());
+
 
 
     }
