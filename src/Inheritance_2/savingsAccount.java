@@ -3,10 +3,6 @@ package Inheritance_2;
 public class savingsAccount extends bankAccount{
     private double interestRate;
 
-    public savingsAccount() {
-        this.interestRate = interestRate;
-    }
-
     public savingsAccount(int accountNumber, double balance, double interestRate) {
         super(accountNumber, balance);
         this.interestRate = interestRate;

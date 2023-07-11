@@ -5,18 +5,13 @@ public class Dog extends Animal {
     String tailShape;
     public Dog(){}
 
-    public Dog(String earShape, String tailShape) {
-        this.earShape = earShape;
-        this.tailShape = tailShape;
-    }
-
-    public Dog(String type, String size, Double waight, String earShape, String tailShape) {
+    public Dog(String type, double size, double waight, String earShape, String tailShape) {
         super(type, size, waight);
         this.earShape = earShape;
         this.tailShape = tailShape;
     }
 
-    public String getEarShape() {
+    public String getEarShape(String prick) {
         return earShape;
     }
 
@@ -43,6 +38,8 @@ public class Dog extends Animal {
     public void wagTail(){
         System.out.println(this .getType()+" has wag tail");
     }
+
+
     @Override
     public String toString() {
         return "Dog{" +
@@ -51,4 +48,6 @@ public class Dog extends Animal {
                 '}';
     }
 }
+
+
 

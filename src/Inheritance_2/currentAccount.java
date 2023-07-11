@@ -12,7 +12,7 @@ public class currentAccount extends bankAccount{
         return overdraftLimit;
     }
 
-    public void setOverdraftLimit(double overdraftLimit) {
+    public void setOverdraftLimit(double overDraft) {
         this.overdraftLimit = overdraftLimit;
     }
     public void withdraw(double amount){
@@ -33,9 +33,4 @@ public class currentAccount extends bankAccount{
                 '}';
     }
 
-
-
-    public static void main(String[] args) {
-
-    }
 }

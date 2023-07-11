@@ -2,17 +2,18 @@ package inheritance;
 
 public class Animal {
         private String type;
-        private String size;
-        private Double waight;
+        private double size;
+        private double waight;
         public Animal(){}
 
-        public Animal(String type, String size, Double waight) {
-            this.type = type;
-            this.size = size;
-            this.waight = waight;
-        }
+    public Animal(String type, double size, double waight) {
+        this.type = type;
+        this.size = size;
+        this.waight = waight;
+    }
 
-        public String getType() {
+
+    public String getType() {
             return type;
         }
 
@@ -20,11 +21,11 @@ public class Animal {
             this.type = type;
         }
 
-        public String getSize() {
+        public double getSize() {
             return size;
         }
 
-        public void setSize(String size) {
+        public void setSize(double size) {
             this.size = size;
         }
 
@@ -36,10 +37,10 @@ public class Animal {
             this.waight = waight;
         }
         public void move(String speed){
-            System.out.println("this "+this.type+"  move "+speed);
+            System.out.println(this.type+" cover "+speed);
         }
-        public void makesNoise(){
-            System.out.println("this "+this.type+" makes noise");
+        public void makesNoise(String noise){
+            System.out.println(this.type+" sounds like " + noise);
         }
 
         @Override

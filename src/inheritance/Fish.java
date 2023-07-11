@@ -3,14 +3,9 @@ package inheritance;
 public class Fish extends Animal {
     int fins;
     int gill;
-    public void Fish(){}
+    public Fish(int i, int i1){}
 
-    public Fish(int fins, int gill) {
-        this.fins = fins;
-        this.gill = gill;
-    }
-
-    public Fish(String type, String size, Double waight, int fins, int gill) {
+    public Fish(String type, double size, double waight, int fins, int gill) {
         super(type, size, waight);
         this.fins = fins;
         this.gill = gill;
@@ -47,4 +42,3 @@ public class Fish extends Animal {
                 '}';
     }
 }
-
