@@ -1,9 +1,9 @@
 package Inheritance_2;
 
-public class savingsAccount extends bankAccount{
+public class SavingsAccount extends BankAccount{
     private double interestRate;
 
-    public savingsAccount(int accountNumber, double balance, double interestRate) {
+    public SavingsAccount(int accountNumber, double balance, double interestRate) {
         super(accountNumber, balance);
         this.interestRate = interestRate;
     }

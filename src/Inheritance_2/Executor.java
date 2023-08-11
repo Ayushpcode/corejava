@@ -6,7 +6,7 @@ public class Executor {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
 
-                savingsAccount customer = new savingsAccount(900000101, 50000, 0.0);
+                SavingsAccount customer = new SavingsAccount(900000101, 50000, 0.0);
                 System.out.println("Enter deposit money !");
                 double deposit = in.nextDouble();
                 customer.deposit(deposit);
@@ -20,7 +20,7 @@ public class Executor {
                 customer.applyInterest();
                 System.out.println(customer.toString());
 
-                currentAccount ca = new currentAccount(900000101, 50000, 0.0);
+                CurrentAccount ca = new CurrentAccount(900000101, 50000, 0.0);
                 System.out.println("Over draft limits !");
                 double overDraft = in.nextDouble();
                 ca.setOverdraftLimit(overDraft);

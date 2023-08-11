@@ -1,12 +1,12 @@
 package Inheritance_2;
 
-public class bankAccount {
+public class BankAccount {
     int accountNumber;
     double balance;
 
-    public bankAccount(){}
+    public BankAccount(){}
 
-    public bankAccount(int accountNumber, double balance) {
+    public BankAccount(int accountNumber, double balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;
     }

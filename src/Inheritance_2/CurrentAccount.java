@@ -1,9 +1,15 @@
 package Inheritance_2;
 
-public class currentAccount extends bankAccount{
+public class CurrentAccount extends BankAccount{
     private double overdraftLimit;
 
-    public currentAccount(int accountNumber, double balance, double overdraftLimit) {
+    public CurrentAccount(){}
+
+    public CurrentAccount(double overdraftLimit) {
+        this.overdraftLimit = overdraftLimit;
+    }
+
+    public CurrentAccount(int accountNumber, double balance, double overdraftLimit) {
         super(accountNumber, balance);
         this.overdraftLimit = overdraftLimit;
     }
@@ -26,7 +32,7 @@ public class currentAccount extends bankAccount{
 
     @Override
     public String toString() {
-        return "currentAccount{" +
+        return super.getAccountNumber()+"currentAccount{" +
                 "overdraftLimit=" + overdraftLimit +
                 ", accountNumber=" + accountNumber +
                 ", balance=" + balance +
